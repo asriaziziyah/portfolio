@@ -1,111 +1,516 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Portfolio website</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- Webpage Title -->
+    <title>Asri Aziziyah's Portfolio</title>
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/icon.png">
 </head>
-<body>
-	<!----hero Section start---->
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>   -->
 
-	<div class="hero" id="home">
-		<nav>
-			<h2 class="logo">Portfo<span>lio</span></h2>
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#aboutme">About Me</a></li>
-				<li><a href="#myskills">My Skills</a></li>
-				<li><a href="#contactme">Contact Me</a></li>
-			</ul>
-			<a href="#" class="btn">Curriculum Vitae</a>
-		</nav>
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
 
-		<div class="content">
-			<h4>Hello, my name is</h4>
-			<h1>Asri Aziziyah</h1>
-			<h3>I'am a Freelance Designer.</h3>
-		</div>
-	</div>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-	<!----About section start---->
-	<section class="about">
-		<div class="main" id="aboutme">
-			<img src="img/fotopp.jpg">
-			<div class="about-text">
-				<h2>About Me</h2>
-				<h5>Electrical Engineering Student <span>& Designer</span></h5>
-				<p>An undergraduate student in Electrical Engineering who has interest and experience in social media design, branding design and content creator.</p>
-				<form action="https://wa.me/+6289612080576">
-					<button type="submit">Let's Talk</button>
-				</form>
-			</div>
-		</div>
-	</section>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="project.html">Project Details</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="http://github.com/asriaziziyah">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.linkedin.com/in/asri-aziziyah-982338152">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
 
-	<!-----service section start----------->
-	<div class="service" id="myskills">
-		<div class="title">
-			<h2>My Skills</h2>
-		</div>
 
-		<div class="box">
-			<div class="card">
-				<h5>Instagram Design</h5>
-				<div class="pra">
-					<p>Design a feed instagram template for some account</p>
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
-			<div class="card">
-				<h5>Branding Design</h5>
-				<div class="pra">
-					<p>Design a logo, packaging design, flyer for event, etc.</p>
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
 
-			<div class="card">
-				<h5>UI/UX Design</h5>
-				<div class="pra">
-					<p>Design UI/UX for some website project</p>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1 class="h1-large">Asri Aziziyah's Portfolio</h1>
+                        <button class="button1" onclick="scrollToSection('#about')">Discover</button>
+                        <a class="btn-outline-lg page-scroll" href="file/CV_Asri Aziziyah.pdf"><i class="fas fa-download"></i>Download CV</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<!------Contact Me------>
-	<div class="contact-me" id="contactme">
-		<p>Let me make a beautiful design for you! :)</p>
-		<a class="button-two" href="mailto:asriaziziyah123@gmail.com">Email</a>
-		<p></p>
-		<a class="button-two" href="https://wa.me/+6289612080576">Whatsapp</a>
-	</div>
+    <!-- About-->
+    <div id="about" class="basic-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container first">
+                        <h2>Summary</h2>
+                        <p>Adaptable and well-rounded undergraduate student of Electrical Engineering majoring in Information and Communication Technology at Sebelas Maret University. Passionate about Web and Mobile App Development, Network Engineering, and Data Analysis. In addition to my technical skills and passion for technology, I also have proficiency in graphic design and social media management. With a diverse skillset and extensive knowledge, I am eager to leverage my expertise to effectively contribute to organizational objectives.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container second">
+                        <div class="time">FEB 2023 - PRESENT</div>
+                        <h5>Head of Communication and Media Information</h5>
+                        <h6>Studi Ilmiah Mahasiswa UNS</h6>
+                        <p>Manage SIM's social media platforms and website, coordinate and supervise the team, design visual content using Canva and Adobe Illustrator</p>
+                        <div class="time">FEB 2023 - JULI 2023</div>
+                        <h5>Machine Learning Cohort</h5>
+                        <h6>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</h6>
+                        <p>Learning and applying machine learning concepts, algorithms, and techniques to real projects, Collaborating with a diverse cohort of fellow students, Gaining hands-on experience in data analysis, model development, and evaluation, Working on projects related to image classification, leveraging Python programming and data science skills</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container third">
+                        <div class="time">AUG 2022 - DEC 2022</div>
+                        <h5>Data Science Student</h5>
+                        <h6>Startup Campus</h6>
+                        <p>Collaborated with a team of fellow students at Startup Campus to complete a data analytics project, Contributed to all stages of the project, including data collection, data preprocessing, exploratory data analysis, modeling, and result interpretation, Utilized tools such as Python and SQL to analyze the project dataset, and visualize the analysis using libraries such as Matplotlib and Seaborn</p>
+                        <div class="time">FEB 2022 - DEC 2022</div>
+                        <h5>Media & Communications Staff</h5>
+                        <h6>Himpunan Mahasiswa Teknik Elektro FT UNS</h6>
+                        <p>Designing Instagram feed and managing organizations’s website</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of about -->
 
-	<!------footer start--------->
-	<footer>
-		<p>Asri Aziziyah</p>
-		<p>For more information, please click on the link below to follow my social media:</p>
-		<div class="social">
-			<a href="#"><i class="fab fa-facebook-f"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-linkedin"></i></a>
-		</div>
-		<p class="end">Thank You for Coming</p>
-	</footer>
+
+    <!-- Services -->
+    <div id="services" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">My Services</h2>
+                    <p class="p-heading">I have diverse services based on my experiences and projects during my college life.<br>Here are my services</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="far fa-gem"></i>
+                        <h4>DESIGN</h4>
+                        <br>
+                        <h6>LOGO & PACKAGING DESIGN</h6>
+                        <p>Creating unique and visually appealing logos and packaging that represent the brand identity of businesses and organizations.</p>
+                        
+                        <h6>POSTER & FEED DESIGN</h6>
+                        <p>Designing eye-catching posters and instagram feed for events, or marketing campaigns.</p>
+                        <br>
+                        <h5>TOOLS & SKILLS</h5>
+                        <p>I use Canva, Adobe Illustrator and Adobe Photoshop</p>
+                        <div class="icons-container">
+                            <img src="images/canva2.jpg" alt="alternative">
+                            <img src="images/details-icon-illustrator.png" alt="alternative">
+                            <img src="images/details-icon-photoshop.png" alt="alternative">
+                        </div>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-code"></i>
+                        <h4>DEVELOPMENT</h4>
+                        <br>
+                        <h6>UI/UX DESIGN</h6>
+                        <p>Crafting user-friendly and visually appealing interfaces for websites and mobile applications, focusing on enhancing the user experience.</p>
+                        
+                        <h6>WEB & APP DEVELOPMENT</h6>
+                        <p>I specialize in building simple, yet elegant websites and mobile applications from scratch.</p>
+                        <br>
+                        <h5>TOOLS & SKILLS</h5>
+                        <p>For UI/UX design, i use Figma and for website development i use programming languages such as HTML, CSS, Bootstrap and JavaScript.</p>
+                        <div class="icons-container">
+                            <img src="images/figma.png" alt="alternative">
+                            <img src="images/details-icon-html.png" alt="alternative">
+                            <img src="images/details-icon-css.png" alt="alternative">
+                            <img src="images/details-icon-bootstrap.png" alt="alternative">
+                            <!-- <img src="images/details-icon-javascript.png" alt="alternative"> -->
+                        </div>
+                        <p>For mobile app development i use flutter and android studio</p>
+                        <div class="icons-container">
+                            <img src="images/flutter.jpg" alt="alternative">
+                            <img src="images/android.png" alt="alternative">
+                        </div>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>DATA SCIENCE</h4>
+                        <br>
+                        <h6>DATA ANALYSIS</h6>
+                        <p>Analyzing and interpreting data to provide valuable insights from dataset using statistical techniques and data visualization tools.</p>
+                        <h6>MACHINE LEARNING</h6>
+                        <p>Developing and implementing machine learning models and algorithms to solve problems.</p>
+                        <br>
+                        <h5>TOOLS & SKILLS</h5>
+                        <p>For data analysis, i use Python programming languages in Google Collab and Tensorflow library to create machine learning model</p>
+                        <div class="icons-container">
+                            <img src="images/python.png" alt="alternative">
+                            <img src="images/collab2.png" alt="alternative">
+                            <img src="images/tensorflow.png" alt="alternative">
+                        </div>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of services -->
+
+
+    <!-- Details
+	<div class="basic-2">
+		<div class="area-1">
+		</div> end of area-1 on same line and no space between comments to eliminate margin white space <div class="area-2 bg-gray">
+            <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">     
+                        
+                        Text Container
+                        <div class="text-container">
+                            <h2>Why Work With Me</h2>
+                            <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well</p>
+                            <h5>DESIGN TOOLS</h5>
+                            <p>My favorite design tools are Photoshop and Illustrator but I can create designs in Figma, Sketch and Adobe XD too</p>
+                            <h5>DEVELOPMENT SKILLS</h5>
+                            <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other modern frameworks</p>
+                            
+                            <div class="icons-container">
+                                <img src="images/details-icon-photoshop.png" alt="alternative">
+                                <img src="images/details-icon-illustrator.png" alt="alternative">
+                                <img src="images/details-icon-html.png" alt="alternative">
+                                <img src="images/details-icon-css.png" alt="alternative">
+                                <img src="images/details-icon-bootstrap.png" alt="alternative">
+                                <img src="images/details-icon-javascript.png" alt="alternative">
+                            </div> end of icons-container -->
+                        <!-- </div> end of text-container -->
+                        <!-- end of text container -->
+
+                    <!-- </div> end of col -->
+                <!-- </div> end of row -->
+            <!-- </div> end of container -->
+		<!-- </div> end of area-2 -->
+    <!-- </div> end of split -->
+    <!-- end of details -->
+
+
+    <!-- Projects -->
+    <div id="projects" class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">My Projects</h2>
+                    <p class="p-heading">Here are a few examples of the projects I have been involved in, showcasing a diverse range of expertise, including UI/UX design, web development, and app development.</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of projects -->
+
+
+    <!-- Works -->
+    <div class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://baskara-mppt.com/">
+                                <img class="img-fluid" src="images/baskaramppt.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>Landing Page Monitoring Website</strong>
+                            <br><strong>For:</strong> Baskara Smart MPPT
+                            <!-- <br><strong>Utilize:</strong> HTML, CSS, PHP, Bootstrap -->
+                            <a class="blue" href="https://baskara-mppt.com/">details</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://asriaziziyah.github.io/workmotely/">
+                                <img class="img-fluid" src="images/workmotely.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>Landing Page & Task Management Website</strong>
+                            <br><strong>For:</strong> Workmotely
+                            <a class="blue" href="https://asriaziziyah.github.io/workmotely/">details</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://hmte.ft.uns.ac.id">
+                                <img class="img-fluid" src="images/hmteweb.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>Organization Website</strong>
+                            <br><strong>For:</strong> HMTE UNS 2022
+                            <a class="blue" href="https://hmte.ft.uns.ac.id">details</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://festivalilmiah.uns.ac.id">
+                                <img class="img-fluid" src="images/film2022.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>Event Website</strong>
+                            <br><strong>For:</strong> FILM UNS 2022
+                            <a class="blue" href="https://festivalilmiah.uns.ac.id">details</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://www.figma.com/proto/ePXz9pHAcJKYwR8C9wpfJy/Guru-Pintar?page-id=0%3A1&node-id=23-310&scaling=scale-down&mode=design">
+                                <img class="img-fluid" src="images/gurupintar.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>UI/UX Design Business Website</strong>
+                            <br><strong>For:</strong> Guru Pintar
+                            <a class="blue" href="https://www.figma.com/proto/ePXz9pHAcJKYwR8C9wpfJy/Guru-Pintar?page-id=0%3A1&node-id=23-310&scaling=scale-down&mode=design">details</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://github.com/asriaziziyah/todolistapp">
+                                <img class="img-fluid" src="images/todoapp.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>Flutter App Development</strong>
+                            <br><strong>For:</strong> Todo App
+                            <a class="blue" href="https://github.com/asriaziziyah/todolistapp">details</a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of works -->
+
+    <!-- Projects -->
+    <div class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Design Portfolio</h2>
+                    <p class="p-heading">To view my design portfolio, please click on the following link:
+                    <br><br><button class="button2" onclick="redirectToLink('https://www.canva.com/design/DAEXqGtqiYg/NWOMUrn7OU5ErHDpGB-oBg/view?website#4')">Portfolio</button>
+                    <br><br><br><br><br><br>
+                </p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of projects -->
+
+    <!-- Section Divider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="section-divider">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    <!-- end of section divider -->
+
+
+    <!-- Contact -->
+    <!-- <div id="contact" class="form-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact details</h2>
+                    <p class="p-heading">If you have any kind of online project, feel free to contact me without any hesitation. The most efficient method is to send me your message through the email address provided: <br><a class="blue no-line" href="asriaziziyah123@gmail.com">asriaziziyah123@gmail.com</a></p>
+                </div> end of col -->
+            <!-- </div> end of row -->
+            <!-- <div class="row">
+                <div class="col-lg-12">
+                    
+                    Contact Form
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Project details</label>
+                        </div>
+                        <div class="form-group">
+                            <button class="button2" type="submit" class="form-control-submit-button">Submit</button>
+                        </div>
+                    </form> -->
+                    <!-- end of contact form -->
+
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+        <!-- </div> end of container -->
+    <!-- </div> end of form-1 -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray" id="contact">
+        <div class="container">
+            <div>
+                <h2 class="h2-heading" style="color: white;">Contact Me<br><br></h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="http://github.com/asriaziziyah">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/asri-aziziyah-982338152">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/asriaziziyah">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © <a class="no-line" href="#your-link">Asri Aziziyah</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Distributed By <a class="no-line" href="https://themewagon.com/">Themewagon</a></p>
+                </div> end of col -->
+            <!-- </div> enf of row -->
+        <!-- </div> end of container -->
+        
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+
+    <script>
+        function scrollToSection(sectionId) {
+          const section = document.querySelector(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+    </script>
+    <script>
+      function redirectToLink(url) {
+        window.location.href = url;
+      }
+    </script>
+    
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
